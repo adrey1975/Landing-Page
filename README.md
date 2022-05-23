@@ -1,2 +1,6 @@
 # landing_page
-A landing page/Portfolio for future projects to be linked.
+A Landing Page/Portfolio for future projects to be linked and 
+readily accessible to potential employers.
+
+# Photos_used
+Photo by Ushindi Namegabe from Pexels
