@@ -3,4 +3,4 @@ A Landing Page/Portfolio for future projects to be linked and
 readily accessible to potential employers.
 
 # Photos_used
-Photo by Ushindi Namegabe from Pexels
+Photo by Max Avans from Pexels
