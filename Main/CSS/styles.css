@@ -49,3 +49,27 @@ body{
     margin-right: 20px;
     gap: 20px;
 }
+
+.mid-header{
+    display: flex;
+    justify-content: center;
+}
+img{
+    width: 16em;
+    height: auto;
+    object-fit: cover;
+    border: 0.3em solid rgb(116, 112, 120);
+    border-radius: 1.5em;
+    box-shadow: 0 10px 30px;
+    margin-left: 50px;
+    margin-bottom: 0%;
+
+    
+}
+
+.description-1{
+    width: 200px;
+    text-align: justify;
+    margin-left: 100px;
+    font-size: 1.5em;
+}
