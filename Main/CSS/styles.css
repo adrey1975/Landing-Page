@@ -12,24 +12,26 @@ body{
     background-size: cover;
     background-blend-mode: multiply;
 
-    padding-top: 15px;
-    padding-bottom: 400px;
+    padding-top: 0px;
+    padding-bottom: 200px;
 }
 
 .about-container{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items:center;
+    justify-content: center;
+    padding-top: 30px;
+
 }
 
 .header-for-about{
-    font-size: 100px;
-    margin: 10px;
+    font-size: 35px;
 }
 .about-main{
-    font-size: 50px;
-    margin: 10px;
-    padding: 20px;
+    width: 500px;
+    text-align: justify;
+    font-size: 25px;
     font-weight: 100;
 }
 
