@@ -97,3 +97,33 @@ img:hover{
     font-weight: bold;
     font-size: 25px;
 }
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 100;
+    background-color: #e5e7eb;
+}
+
+.bot{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: blanchedalmond;
+    padding: 20px;
+    margin: 100px;
+    border-radius: 1.5em;
+}
+.desc-2{
+    width: 200px;
+    text-align: justify;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+button{
+    font-size: 20px;
+    border-radius: 1em;
+}
