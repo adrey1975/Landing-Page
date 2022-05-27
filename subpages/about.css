@@ -64,4 +64,18 @@ p{
 .btn:hover{
     background: #dadada;
 }
+a{
+    font-weight: 400;
+    font-style: italic;
+    padding:2rem 7.5rem;
+    font-size: 2rem;
+    text-decoration: none;
+    color: blanchedalmond;
+    border-radius: 10px;
+    transition: background 0.5s;
+
+}
+a:hover{
+    color:rgb(165, 124, 63);;
+}
 
