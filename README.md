@@ -4,3 +4,4 @@ readily accessible to potential employers.
 
 # Photos_used
 Photo by Max Avans from Pexels
+About Page Photo by Ushindi Namegabe from Pexels
