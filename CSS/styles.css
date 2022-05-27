@@ -65,7 +65,7 @@ img{
     margin-bottom: 0%;
 }
 img:hover{
-    box-shadow: 0 0 10px #ccc;
+    box-shadow: 0 0 10px rgb(15, 13, 13);
 
 }
 .description-1{
@@ -130,4 +130,14 @@ button{
     font-size: 25px;
     border-radius: 1em;
     margin-right: 100px;
+}
+
+a {
+    text-decoration: none;
+    transition: background 0.5s;
+    color: #dadada;
+}
+a:hover{
+    color:rgb(165, 124, 63);
+
 }
