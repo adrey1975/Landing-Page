@@ -57,7 +57,9 @@ button{
     cursor: pointer;
 }
 input:focus~label,
-input:valid~label{
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label{
     top: -35px;
     font-size: 14px;
 }
