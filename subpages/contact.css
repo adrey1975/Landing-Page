@@ -63,3 +63,12 @@ textarea:valid~label{
     top: -35px;
     font-size: 14px;
 }
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.row .input-group{
+    flex-basis: 48%;
+}
