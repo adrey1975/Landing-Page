@@ -1,76 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="CSS/styles.css">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio Website</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
-</head>
-<body>
-    <div class="top sect-1">
-        <div class="header">
-            <h2 class="logo">Portfolio</h2>
-            <div class="header-links">
-                <a class="hl1" href="./subpages/about.html">About</a>
-                <a class="hl2" href="./subpages/contact.html">Contact</a>
-                <!--a class="hl3">Social</a-->  
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="max-width">
+                <div class="logo"><a href="#">Portfo<span>lio</span></a></div>
+                <ul class="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
             </div>
-        </div>
-        <div class="about-container">
-            <h1 class="header-for-about">About this Website</h1>
-            <main class="about-main">
-                <p>
-                    This website is my personal portfolio containing links
-                    to the various projects I have worked on! It serves as a landing page 
-                    I created for the primary purpose of getting a <strong><em>JOB</em></strong>!
-                </p>
-                
-                <p>
-                    I will continue to update this page with any future projects I work on
-                    with the secondary purpose being tracking my progress as a software dev!
-                    Click the <strong>about</strong> link on the top right to get to know a bit about me, or click 
-                    the <strong>contact </strong> link if you want to hire me :-)
-                </p>
-            </main>
-        </div>
-    </div>
-    <div class="mid-1 sect-2">
-        <h1 class="mid-header">Projects</h1>
-            <a id="linkbox" href="https://adrey1975.github.io/odin-recipes/">
-                <img src="images/food.png" alt="picture of brock from pokemon cooking a beautiful anime stew">
-                <p class="description-1">
-                    Recipe Website
-                </p>
-            </a>
-            <a id="linkbox" href="https://adrey1975.github.io/NPC-Generator/">
-                <img src="images/solaire.jpg" alt="picture of solaire from dark souls staring off into the distance">
-                <p class="description-1">NPC-Generator</p>
-            </a>
-            <a id="linkbox" href="https://adrey1975.github.io/Rock-Paper-Scissors/">
-                <img src="images/ropasc.jpg" alt="Rock paper scissors stand off">
-                <p class="description-1">
-                    R-P-S Game
-                </p>
-            </a>
+        </nav>
 
+        <!-- home section -->
+        <section class="home" id="home">
+            <div class="max-width">
+                <div class="home-content">
+                    <div class="text-1">Hello, my name is</div>
+                    <div class="text-2">Adrian Reyes</div>
+                    <div class="text-3">And I'm a <span>Software Developer</span></div>
+                </div>
+            </div>
+        </section>
 
-        
-    </div>
-    <div class="mid-2 sect-3">
-        <p class="quote">
-            ″A purpose of human life, no matter who is controlling it, is to love whoever 
-            is around to be loved.”
-        </p>
-        <p class="writer-name">-Kurt Vonnegut</p>
-    </div>
-    <div class="footer">
-        <p>
-            <string> adrey1975 </string> for <strong>The Odin Project</strong>
-        </p>
-    </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, nihil vero minima deserunt voluptas praesentium minus nesciunt delectus, sit tempora repellendus asperiores expedita aliquam, debitis sint laboriosam deleniti saepe cumque!</p>
     
-</body>
+    </body>
 </html>
