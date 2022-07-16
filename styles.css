@@ -112,18 +112,11 @@
     font-weight: 700;
 }
 
-
-/* About section styling */
+/* Multi-sectional content styling */
 section{
     padding: 100px 0;
 }
-
-.about{
-    font-family: 'Poppins', sans-serif;
-
-}
-
-.about .title{
+section .title{
     position: relative;
     text-align: center;
     font-size: 40px;
@@ -132,18 +125,17 @@ section{
     padding-bottom: 20px;
     font-family: 'Poppins', sans-serif;
 }
-.about .title::before{
+section .title::before{
     content: "";
     position: absolute;
     bottom: 0px;
     left: 50%;
-    width: 180px;
+    width: 215px;
     height: 3px;
     background: #111;
     transform: translateX(-50%);
 }
-.about .title::after{
-    content: "who i am";
+section .title::after{
     position: absolute;
     bottom: -15px;
     left: 50%;
@@ -153,7 +145,15 @@ section{
     background: #fff;
     transform: translateX(-50%);
 }
-.about .about-content{
+
+/* About section styling */
+.about, .projects{
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.about .about-content, 
+.projects .projects-content{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -203,17 +203,37 @@ section{
 
 
 /* My Projects section */
-.projects-content .card .box {
+.projects{
+    background-color: blanchedalmond;
+}
+
+.projects .projects-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects .projects-content .card{
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+}
+
+.projects-content .box {
     position: relative;
     width: 16em;
+    margin: 10px;
+
 }
-.projects-content .card .box .image-img{
+.projects-content .box .image-img{
     display: block;
     width: 100%;
     border-radius: 6px;
 }
 .projects-content .card .box .overlay{
     position: absolute;
+    overflow: hidden;
     top: 0;
     left: 0;
     width: 100%;
@@ -225,7 +245,7 @@ section{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-items: center;
     opacity: 0;
     transition: opacity 0.25s;
 }
@@ -233,23 +253,32 @@ section{
     transform: translateY(20px);
     transition: transform 0.25s;
 }
-.projects-content .card .box .overlay:hover{
+.projects-content .box .overlay:hover{
     opacity: 1;
+    width: 100%;
+    height: 100%;
 }
 .overlay:hover > * {
     transform: translateY(0);
 }
-.title{
-    font-size: 2em;
-    font-weight: bold;
+
+.projects .projects-content .card .box{
+    transition: all 0.3s ease;
+}
+.projects .projects-content .card:hover .box {
+    transform: scale(1.05);
+}
+.box-title{
+    font-size: 100%;
+    font-weight:bolder;
+    margin-top: 0.50em;
 }
 .site-description{
-    font-size: 1.25em;
-    margin-top: 0.25em;
+    font-size: 100%;
+    margin-top: 1em;
     margin-left: .50em;
+
 }
-
-
 
 
 /* Hamburger button menu styling/Responsive media queries */
@@ -305,6 +334,8 @@ section{
     .menu.active{
         left: 0;
     }
+
+
     .home .home-content .text-2{
         font-size: 70px;
     }
@@ -314,6 +345,8 @@ section{
     .max-width{
         max-width: 800px;
     }
+
+
     .about .about-content .column{
         width: 100%;
     }
@@ -339,6 +372,8 @@ section{
     .home .home-content .text-3{
         font-size: 32px;
     }
+
+
 }
 
 @media (max-width: 500px){
