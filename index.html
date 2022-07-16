@@ -5,7 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Personal Portfolio Website</title>
         <link rel="stylesheet" href="styles.css">
-        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     </head>
@@ -14,11 +13,16 @@
             <div class="max-width">
                 <div class="logo"><a href="#">Portfo<span>lio</span></a></div>
                 <ul class="menu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li class="nav-item"><a href="#" class="links">Home</a></li>
+                    <li class="nav-item"><a href="#" class="links">About</a></li>
+                    <li class="nav-item"><a href="#" class="links">Projects</a></li>
+                    <li class="nav-item"><a href="#" class="links">Contact</a></li>
                 </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
             </div>
         </nav>
 
@@ -33,7 +37,51 @@
             </div>
         </section>
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, nihil vero minima deserunt voluptas praesentium minus nesciunt delectus, sit tempora repellendus asperiores expedita aliquam, debitis sint laboriosam deleniti saepe cumque!</p>
-    
+        <!-- About Section -->
+        <section class="about" id="about">
+            <div class="max-width">
+                <h2 class="title">About me</h2>
+                <div class="about-content">
+                    <div class="column left">
+                        <img src="images/profilepic-2-copy.jpg" alt="">
+                    </div>
+                    <div class="column right">
+                        <div class="text">I'm Adrian and I'm a <span>Software Developer</span></div>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius fugiat reiciendis libero? Et, velit! Veniam, officia harum. Deserunt laborum, nesciunt aspernatur quaerat eum voluptatem impedit similique inventore corporis, tempora reiciendis.</p>
+                        <a href="#">Download Resume</a>
+                    </div>
+
+                    
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects" id="projects">
+            <div class="max-width">
+                <h2 class="title">My Projects</h2>
+                <div class="projects-content">
+                    <div class="card">
+                        <div class="box">
+                            <a href="https://adrey1975.github.io/odin-recipes/">
+                                <img class="image-img" alt="brock from pokemon cooking a stew" src="images/food.png">                               
+                            </a>
+                            <div class="overlay"> 
+                                <div class="title">Recipe Website</div>
+                                <p class="site-description">
+                                    A brutalist styled recipe website.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>  
+        
+        
+
+        <script src="script.js"></script>
     </body>
 </html>
