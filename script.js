@@ -25,3 +25,20 @@ $(document).ready(function(){
         }
     })
 });
+
+// Functions that will take user to our project depending on which image in our projects section is clicked
+function recipeTab() {
+    window.open(
+        "https://adrey1975.github.io/odin-recipes/", "_blank");
+}
+
+function rpsTab() {
+    window.open(
+        "https://adrey1975.github.io/Rock-Paper-Scissors/", "_blank");
+}
+
+function npcTab() {
+    window.open(
+        "https://adrey1975.github.io/NPC-Generator/", "_blank");
+}
+

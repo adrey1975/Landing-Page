@@ -4,9 +4,13 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Personal Portfolio Website</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+                integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+                crossorigin="anonymous">
+        </script>
+        
         <link rel="stylesheet" href="styles.css">
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
     </head>
     <body>
         <nav class="navbar">
@@ -63,11 +67,9 @@
                 <h2 class="title">My Projects</h2>
                 <div class="projects-content">
                     <div class="card">
-                        <div class="box">
-                            <a href="https://adrey1975.github.io/odin-recipes/">
-                                <img class="image-img" alt="brock from pokemon cooking a stew" src="images/food.png">                               
-                            </a>
-                            <div class="overlay"> 
+                        <div class="box">                              
+                            <img class="image-img" alt="brock from pokemon cooking a stew" src="images/food.png">                           
+                            <div class="overlay" onclick="recipeTab()"> 
                                 <div class="box-title">Recipe Website</div>
                                 <p class="site-description">
                                     A brutalist styled recipe website.
@@ -77,10 +79,8 @@
                     </div>
                     <div class="card">
                         <div class="box">
-                            <a href="https://adrey1975.github.io/odin-recipes/">
-                                <img class="image-img" alt="picture of hands signaling rock paper and scissors" src="images/ropasc.jpg">                               
-                            </a>
-                            <div class="overlay"> 
+                            <img class="image-img" alt="picture of hands signaling rock paper and scissors" src="images/ropasc.jpg">                               
+                            <div class="overlay" onclick="rpsTab()"> 
                                 <div class="box-title">RPS Game</div>
                                 <p class="site-description">
                                     A basic game of rock paper scissors.
@@ -90,10 +90,8 @@
                     </div>
                     <div class="card">
                         <div class="box">
-                            <a href="https://adrey1975.github.io/odin-recipes/">
-                                <img class="image-img" alt="picture of dark souls character saluting the son" src="images/solaire-copy.jpg"> 
-                            </a>                              
-                            <div class="overlay"> 
+                            <img class="image-img" alt="picture of dark souls character saluting the son" src="images/solaire-copy.jpg"> 
+                            <div class="overlay" onclick="npcTab()"> 
                                 <div class="box-title">NPC Generator</div>
                                 <p class="site-description">
                                     Which video game NPC are you?
@@ -104,9 +102,68 @@
                 </div>
             </div>
         </section>  
+       
+        <!--Contact Section-->
+        <section class="contact" id="contact">
+            <div class="max-width">
+                <h2 class="title">Contact Me</h2>
+                <div class="contact-content">
+                    <div class="column left">
+                        <div class="text">Get in Touch</div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt magnam, officia corporis numquam expedita magni quibusdam hic placeat dolor minima?</p>
+                        <div class="icons">
+                            <div class="row">
+                                <img id="i" src="icons/user.png" alt="" height="25px" width="25px">
+                                <div class="info">
+                                    <div class="head">Name</div>
+                                    <div class="sub-title">Adrian Reyes</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <img id="i" src="icons/email.png" alt="" height="25px" width="25px">
+                                <div class="info">
+                                    <div class="head">Email</div>
+                                    <div class="sub-title">reyesadrian34@gmail.com</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <img id="i" src="icons/location.png" alt="" height="25px" width="25px">
+                                <div class="info">
+                                    <div class="head">Location</div>
+                                    <div class="sub-title">Austin, Texas</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column right">
+                        <div class="text">Message me</div>
+                        <form action="#">
+                            <div class="fields">
+                                <div class="field name">
+                                    <input type="text" placeholder="Name" required>
+                                </div>
+                                <div class="field email">
+                                    <input type="email" placeholder="Email" required>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <input type="text" placeholder="Subject" required>
+                            </div>
+                            <div class="field textarea">
+                                <textarea cols="30" rows="10" placeholder="Type something.." required></textarea>
+                            </div>
+                            <div class="button">
+                                <button type="submit">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
         
         
-
+        
+        <a href="https://www.flaticon.com/free-icons/user" title="user icons">User icons created by Freepik - Flaticon</a>
         <script src="script.js"></script>
     </body>
 </html>
