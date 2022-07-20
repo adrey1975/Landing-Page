@@ -23,8 +23,12 @@ $(document).ready(function(){
         } else{
             $('.navbar').removeClass("sticky");
         }
-    })
+        
+    });
+
 });
+
+
 
 // Functions that will take user to our project depending on which image in our projects section is clicked
 function recipeTab() {
