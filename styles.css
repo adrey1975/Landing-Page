@@ -1,0 +1,499 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,300;1,400;1,500;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+
+/* navigation style */
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 30px 0;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+}
+.navbar.sticky{
+    padding: 15px 0;
+    background: rgb(99, 193, 125);
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a{
+    color: blanchedalmond;
+    font-size: 35px;
+    font-weight: 700;
+
+}
+.navbar .logo a span{
+    color:rgb(99, 193, 125);
+    transition: all 0.3s ease;
+}
+.navbar.sticky .logo a span{
+    color: blanchedalmond;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+    color: blanchedalmond;
+
+}
+.navbar .menu li a{
+    color:blanchedalmond;
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+
+}
+.navbar .menu li a:hover{
+    color:rgb(99, 193, 125);
+}
+.navbar.sticky .menu li a:hover{
+    color: blanchedalmond;
+}
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: blanchedalmond;
+}
+
+/*Home styling*/
+.home{
+    display: flex;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ),
+    url("images/background-large.jpg")no-repeat center;
+    height: 100vh;
+    color: blanchedalmond;
+    min-height: 500px;
+    font-family: 'Poppins', sans-serif;
+}
+.home .max-width{
+    margin: auto 0 auto 40px;
+}
+.home .home-content .text-1{
+    font-size: 27px;
+}
+.home .home-content .text-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+.home .home-content .text-3{
+    font-size: 40px;
+    margin: 5px 0;
+}
+.home .home-content .text-3 span{
+    color: rgb(99, 193, 125);
+    font-weight: 700;
+}
+
+/* Multi-sectional content styling */
+section{
+    padding: 100px 0;
+}
+section .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+section .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 215px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+section .title::after{
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    font-size: 20px;
+    color: rgb(99, 193, 125);
+    padding: 5px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+
+/* About section styling */
+.about, .projects, .contact, footer{
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.about .about-content, 
+.projects .projects-content,
+.contact .contact-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.about .about-content .left{
+    width: 45%;
+
+}
+.about .about-content .left img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.about .about-content .right{
+    width: 55%;
+}
+.about .about-content .right .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.about .about-content .right .text span{
+    color:rgb(99, 193, 125);
+}
+.about .about-content .right p{
+    text-align: justify;
+}
+.about .about-content .right a{
+    display: inline-block;
+    background: rgb(99, 193, 125);
+    color: blanchedalmond;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid rgb(99, 193, 125);
+    transition: all 0.3s ease;
+}
+.about .about-content .right a:hover{
+    color: rgb(99, 193, 125);
+    background: none;
+}
+
+
+
+/* My Projects section */
+.projects{
+    background-color: blanchedalmond;
+}
+
+.projects .projects-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects .projects-content .card{
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+}
+
+.projects-content .box {
+    position: relative;
+    width: 16em;
+    margin: 10px;
+
+}
+.projects-content .box .image-img{
+    display: block;
+    width: 100%;
+    border-radius: 6px;
+}
+.projects-content .card .box .overlay{
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    background: rgba(0, 0, 0, 0.6);
+    color: blanchedalmond;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+.overlay > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+.projects-content .box .overlay:hover{
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+}
+.overlay:hover > * {
+    transform: translateY(0);
+}
+
+.projects .projects-content .card .box{
+    transition: all 0.3s ease;
+}
+.projects .projects-content .card:hover .box {
+    transform: scale(1.05);
+}
+.box-title{
+    font-size: 100%;
+    font-weight:bolder;
+    margin-top: 0.50em;
+}
+.site-description{
+    font-size: 100%;
+    margin-top: 1em;
+    margin-left: .50em;
+
+}
+
+/* Contact Section Styling */
+.contact .contact-content .column{
+    width: calc(50% - 30px);
+}
+.contact .contact-content .text{
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+.contact .contact-content .left p{
+    text-align: justify;
+}
+.contact .contact-content .left .icons{
+    margin: 10px 0;
+}
+.contact .contact-content .row{
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+.contact .contact-content .row .info{
+    margin-left: 30px;
+}
+.contact .contact-content .info .head{
+    font-weight: 600;
+}
+.contact .contact-content .info .sub-title{
+    color: #333;
+}
+.contact .right form .fields{
+    display: flex;
+}
+.contact .right form .field,
+.contact .right form .fields .field{
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.contact .right form .textarea{
+    height: 80px;
+    width: 100%;
+}
+.contact .right form .name{
+    margin-right: 10px;
+}
+.contact .right form .email{
+    margin-left: 10px;
+}
+.contact .right form .field input,
+.contact .right form .textarea textarea{
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+}
+.contact .right form .textarea textarea{
+    padding-top: 10px;
+    resize: none;
+}
+.contact .right form .button{
+    height: 47px;
+    width: 170px;
+}
+.contact .right form .button button{
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgb(99, 193, 125);
+    background: rgb(99, 193, 125);
+    color: blanchedalmond;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.contact .right form .button button:hover{
+    color: rgb(99, 193, 125);
+    background: none;
+}
+
+/* Footer Section Styling*/
+.copyright{
+    height: 20px;
+    width: 20px;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    background: blanchedalmond;
+    padding: 20px 23px;
+    color: #111;
+}
+footer span a{
+    color: rgb(99, 193, 125);
+    text-decoration: none;
+}
+footer span a:hover{
+    text-decoration: underline;
+}
+
+/* Hamburger button menu styling/Responsive media queries */
+@media (max-width: 1330px){
+    .home .max-width{
+        margin-left: 0px;
+    }
+}
+@media (max-width: 1104px){
+    .about .about-content .left img{
+        height: 350px;
+        width: 350px;
+
+    }
+}
+
+@media (max-width: 991px){
+    .max-width{
+        padding: 0 50px;
+    }
+
+}
+
+@media (max-width: 947px){
+    .hamburger{
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .menu{
+        display: flex;
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: rgb(99, 193, 125);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+    .nav-item{
+        margin: 16px 0;;
+    }
+    .menu.active{
+        left: 0;
+    }
+
+
+    .home .home-content .text-2{
+        font-size: 70px;
+    }
+    .home .home-content .text-3{
+        font-size: 35px;
+    }
+    .max-width{
+        max-width: 800px;
+    }
+
+
+    .about .about-content .column{
+        width: 100%;
+    }
+    .about .about-content .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+    .about .about-content .right{
+        flex: 100%;
+    }
+
+    .contact .contact-content .column{
+        width: 100%;
+        margin-bottom: 35px;
+    }
+    
+}
+
+@media (max-width: 690px){
+    .max-width{
+        padding: 0 23px;
+    }
+    .home .home-content .text-2{
+        font-size: 60px;
+    }
+    .home .home-content .text-3{
+        font-size: 32px;
+    }
+
+
+}
+
+@media (max-width: 500px){
+    .home .home-content .text-2{
+        font-size: 50px;
+    }
+    .home .home-content .text-3{
+        font-size: 27px;
+    }
+}
+

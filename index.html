@@ -1,76 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="CSS/styles.css">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
-
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
-</head>
-<body>
-    <div class="top sect-1">
-        <div class="header">
-            <h2 class="logo">Portfolio</h2>
-            <div class="header-links">
-                <a class="hl1" href="./subpages/about.html">About</a>
-                <a class="hl2" href="./subpages/contact.html">Contact</a>
-                <!--a class="hl3">Social</a-->  
-            </div>
-        </div>
-        <div class="about-container">
-            <h1 class="header-for-about">About this Website</h1>
-            <main class="about-main">
-                <p>
-                    This website is my personal portfolio containing links
-                    to the various projects I have worked on! It serves as a landing page 
-                    I created for the primary purpose of getting a <strong><em>JOB</em></strong>!
-                </p>
-                
-                <p>
-                    I will continue to update this page with any future projects I work on
-                    with the secondary purpose being tracking my progress as a software dev!
-                    Click the <strong>about</strong> link on the top right to get to know a bit about me, or click 
-                    the <strong>contact </strong> link if you want to hire me :-)
-                </p>
-            </main>
-        </div>
-    </div>
-    <div class="mid-1 sect-2">
-        <h1 class="mid-header">Projects</h1>
-            <a id="linkbox" href="https://adrey1975.github.io/odin-recipes/">
-                <img src="images/food.png" alt="picture of brock from pokemon cooking a beautiful anime stew">
-                <p class="description-1">
-                    Recipe Website
-                </p>
-            </a>
-            <a id="linkbox" href="https://adrey1975.github.io/NPC-Generator/">
-                <img src="images/solaire.jpg" alt="picture of solaire from dark souls staring off into the distance">
-                <p class="description-1">NPC-Generator</p>
-            </a>
-            <a id="linkbox" href="https://adrey1975.github.io/Rock-Paper-Scissors/">
-                <img src="images/ropasc.jpg" alt="Rock paper scissors stand off">
-                <p class="description-1">
-                    R-P-S Game
-                </p>
-            </a>
-
-
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio Website</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+                integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+                crossorigin="anonymous">
+        </script>
         
-    </div>
-    <div class="mid-2 sect-3">
-        <p class="quote">
-            ″A purpose of human life, no matter who is controlling it, is to love whoever 
-            is around to be loved.”
-        </p>
-        <p class="writer-name">-Kurt Vonnegut</p>
-    </div>
-    <div class="footer">
-        <p>
-            <string> adrey1975 </string> for <strong>The Odin Project</strong>
-        </p>
-    </div>
-    
-</body>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="max-width">
+                <div class="logo"><a href="#">Portfo<span>lio</span></a></div>
+                <ul class="menu">
+                    <li class="nav-item"><a href="#home" class="links">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="links">About</a></li>
+                    <li class="nav-item"><a href="#projects" class="links">Projects</a></li>
+                    <li class="nav-item"><a href="#contact" class="links">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Home Section -->
+        <section class="home" id="home">
+            <div class="max-width">
+                <div class="home-content">
+                    <div class="text-1">Hello, my name is</div>
+                    <div class="text-2">Adrian Reyes</div>
+                    <div class="text-3">And I'm a <span>Software Developer</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about" id="about">
+            <div class="max-width">
+                <h2 class="title">About me</h2>
+                <div class="about-content">
+                    <div class="column left">
+                        <img src="images/profilepic-2-copy.jpg" alt="">
+                    </div>
+                    <div class="column right">
+                        <div class="text">I'm Adrian and I'm a <span>Software Developer</span></div>
+                        <p>
+                            I have a Bachelors of Arts in English Creative Writing from The University of Texas Rio Grande Valley, 
+                            and I was teaching middle school before I decided to go into tech. I do want to get a Computer Science degree at some point,
+                            but with the amount of resources online I decided to jump into the nitty gritty and 
+                            it's been a blast. I've been coding for about a year now, at first while working my teaching job, 
+                            but then I decided to quit in order to fully commit myself to studying and coding full time. 
+                            I took a class on Python and C++ at Austin Community College, and have learned HTML, CSS,
+                            JavaScript and Node.Js via The Odin Project. I built this website portfolio from scratch, as well
+                            as the projects you'll find below.
+                        </p>
+                        <a href="Resume/Adrian Reyes - Resume .pdf" download="">Download Resume</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects" id="projects">
+            <div class="max-width">
+                <h2 class="title">My Projects</h2>
+                <div class="projects-content">
+                    <div class="card">
+                        <div class="box">                              
+                            <img class="image-img" alt="brock from pokemon cooking a stew" src="images/food.png">                           
+                            <div class="overlay" onclick="recipeTab()"> 
+                                <div class="box-title">Recipe Website</div>
+                                <p class="site-description">
+                                    A brutalist styled recipe website.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="box">
+                            <img class="image-img" alt="picture of hands signaling rock paper and scissors" src="images/ropasc.jpg">                               
+                            <div class="overlay" onclick="rpsTab()"> 
+                                <div class="box-title">RPS Game</div>
+                                <p class="site-description">
+                                    A basic game of rock paper scissors.
+                                </p>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="card">
+                        <div class="box">
+                            <img class="image-img" alt="picture of dark souls character saluting the son" src="images/solaire-copy.jpg"> 
+                            <div class="overlay" onclick="npcTab()"> 
+                                <div class="box-title">NPC Generator</div>
+                                <p class="site-description">
+                                    Which video game NPC are you?
+                                </p>
+                            </div>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </section>  
+       
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <div class="max-width">
+                <h2 class="title">Contact Me</h2>
+                <div class="contact-content">
+                    <div class="column left">
+                        <div class="text">Get in Touch</div>
+                        <p>
+                            Here's some info if you want to contact me about any Jr. Software Developer
+                            positions that you think I may be a good fit for. The form isn't actually hooked
+                            up to my email yet, but my email is right here so feel free to email me!
+                        </p>
+                        <div class="icons">
+                            <div class="row">
+                                <img id="i" src="icons/user.png" alt="" height="25px" width="25px">
+                                <div class="info">
+                                    <div class="head">Name</div>
+                                    <div class="sub-title">Adrian Reyes</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <img id="i" src="icons/email.png" alt="" height="25px" width="25px">
+                                <div class="info">
+                                    <div class="head">Email</div>
+                                    <div class="sub-title">reyesadrian34@gmail.com</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <img id="i" src="icons/location.png" alt="" height="25px" width="25px">
+                                <div class="info">
+                                    <div class="head">Location</div>
+                                    <div class="sub-title">Austin, Texas</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column right">
+                        <div class="text">Message me</div>
+                        <form action="#">
+                            <div class="fields">
+                                <div class="field name">
+                                    <input type="text" placeholder="Name" required>
+                                </div>
+                                <div class="field email">
+                                    <input type="email" placeholder="Email" required>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <input type="text" placeholder="Subject" required>
+                            </div>
+                            <div class="field textarea">
+                                <textarea cols="30" rows="10" placeholder="Type something.." required></textarea>
+                            </div>
+                            <div class="button">
+                                <button type="submit">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <footer>
+            <span>Created By <a href="https://github.com/adrey1975">adrey1975</a> <img src="icons/copywriting.png" alt="copyright logo" class="copyright"> 2022 All rights reserved</span>
+            <div><a href="https://www.flaticon.com/free-icons/user" title="user icons">User icons created by Freepik - Flaticon</a></div>
+        </footer>
+        
+        <script src="script.js"></script>
+    </body>
 </html>
